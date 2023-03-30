@@ -1,0 +1,112 @@
+<!-- templat a website -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Northern Kings - Wargaming Group</title>
+    <meta
+      name="description"
+      content="The Northern Kings are group of wargamers playing games such as Kings of War and Firefight"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #fff;
+        color: #000;
+        font-family: sans-serif;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .sr-only {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+      .events {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 4rem;
+      }
+      @media (min-width: 768px) {
+        .events {
+          flex-direction: row;
+        }
+      }
+      .event {
+        flex: 1 1 100%;
+      }
+      .event a {
+        display: block;
+        text-decoration: none;
+      }
+      .event img {
+        display: block;
+        height: auto;
+        width: 70vw;
+        max-height: 20rem;
+        position: relative;
+      }
+      @media (min-width: 768px) {
+        .event img {
+          height: 40vh;
+          width: auto;
+        }
+      }
+      .event img.nkk {
+        transform: translateX(-6%);
+      }
+      @media (min-width: 768px) {
+        .event img.nkk {
+          height: 36vh;
+          max-height: 16rem;
+          transform: translateY(-2%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="sr-only">The Northern Kings</h1>
+      <ul class="events" role="list">
+        <li class="event">
+          <a href="https://gt.thenorthernkings.com">
+            <img
+              src="/images/nkgt-generic-logo.svg"
+              alt="The Northern Kings Grand Tournament"
+              width="695"
+              height="695"
+              class="nkgt"
+            />
+          </a>
+        </li>
+        <li class="event">
+          <a href="https://kingkon.thenorthernkings.com">
+            <img
+              src="/images/nkk-logo.svg"
+              alt="Northern King Kon"
+              width="1320"
+              height="695"
+              class="nkk"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
